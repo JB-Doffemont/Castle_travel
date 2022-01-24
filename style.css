@@ -1,0 +1,662 @@
+/**
+ * style.css - Style principal de la page
+ */
+
+/**
+ * Polices
+ */
+
+/* Moon Dance */
+@font-face {
+  font-family: "Moon Dance";
+  src: url("assets/fonts/Moon_Dance/MoonDance-Regular.ttf");
+}
+
+/* Poppins */
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins/Poppins-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins/Poppins-Bold.ttf");
+  font-weight: bold;
+}
+
+/* A FAIRE: Implémenter le style de la page selon la maquette */
+
+/**
+*Body
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: "Poppins";
+  background-color: #1f1f1f;
+}
+
+/**
+*Header
+*/
+
+#yellow_layer {
+  background-color: yellow;
+  width: 100vw;
+  height: 1.2vh;
+}
+
+.navigation {
+  background-color: #1f1f1f;
+  justify-content: space-between;
+  color: white;
+  height: 12vh;
+  width: 100vw;
+  display: flex;
+}
+
+#logo {
+  margin-left: 1vw;
+  margin-top: 2vh;
+}
+
+#logo img {
+  height: 7vh;
+}
+
+.navBarre {
+  margin-top: 1.5vh;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin-right: 1vw;
+}
+
+li {
+  margin-right: 2vw;
+}
+
+a {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#square {
+  color: #ecd537;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+/**
+* main
+*/
+
+.background {
+  background: url("./assets/images/altenstein-castle.jpg");
+  filter: opacity(0.5);
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.main_title {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.main_title h1 {
+  font-size: 100px;
+  margin: 0px;
+}
+
+.main_title h3 {
+  margin: 0px;
+  font-weight: 500;
+}
+
+.main_title button {
+  padding: 2vh 2vw;
+  border-radius: 9px;
+  color: white;
+  background-color: #ecd537;
+  border: none;
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 20px;
+  margin: 2vh;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: "Moon dance";
+}
+
+/**
+* Concept
+*/
+
+#concept {
+  text-align: center;
+  margin-top: 5vh;
+}
+#concept h1 {
+  transform: rotate(-90deg);
+  font-size: 150px;
+  position: absolute;
+  color: #2f2f2f;
+  margin: 0px;
+  font-weight: 400;
+  left: -14vw;
+  top: 135vh;
+  z-index: -1;
+}
+
+.concept_title {
+  display: flex;
+  margin-bottom: 2vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.concept_title h2 {
+  margin: 2vh 2vw;
+  font-weight: 500;
+}
+
+.services {
+  display: flex;
+  margin-left: 5vw;
+}
+
+.service {
+  background-color: white;
+  border-radius: 5px;
+  margin: 3vh;
+  height: 25vh;
+  width: 20vw;
+}
+
+.service span {
+  font-size: 8vh;
+  margin-top: 4vh;
+}
+
+.service p {
+  width: 85%;
+  margin: auto;
+  margin-top: 2vh;
+}
+
+/**
+*Châteaux
+*/
+
+#castles {
+  margin-top: 10vh;
+}
+
+#castles h1 {
+  transform: rotate(-90deg);
+  font-size: 160px;
+  position: absolute;
+  color: #2f2f2f;
+  margin: 0px;
+  font-weight: 400;
+  right: -16vw;
+  top: 205vh;
+  z-index: -1;
+}
+
+.castle_title {
+  display: flex;
+  margin-bottom: 2vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.castle_title h2 {
+  margin: 2vh 2vw;
+  font-weight: 500;
+}
+
+.castle_p1 {
+  display: flex;
+  margin-left: 10vh;
+}
+
+.castle_p1 img {
+  height: 31vh;
+  width: 20vw;
+  margin: 2.2vh;
+}
+
+.castle_p2 {
+  display: flex;
+  margin-left: 10vh;
+}
+
+.castle_p2 img {
+  height: 31vh;
+  width: 20vw;
+  margin: 3vh;
+}
+
+#img_large {
+  height: 31vh;
+  width: 40vw;
+  margin: 3vh;
+}
+
+/**
+* Contact
+*/
+
+#contacts {
+  margin-top: 5vh;
+}
+
+#contacts h1 {
+  transform: rotate(-90deg);
+  font-size: 160px;
+  position: absolute;
+  color: #2f2f2f;
+  margin: 0px;
+  font-weight: 400;
+  left: -11vw;
+  top: 269vh;
+  z-index: -1;
+}
+
+.contact_title {
+  display: flex;
+  margin-bottom: 2vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.contact_title h2 {
+  margin: 2vh 2vw;
+  font-weight: 500;
+}
+
+.contact {
+  text-align: center;
+}
+
+.type_contact {
+  justify-content: left;
+  align-items: center;
+  display: flex;
+  margin-left: 30vw;
+  margin-bottom: 3vh;
+}
+
+.type_contact p {
+  color: white;
+}
+
+.type_contact span {
+  background-color: white;
+  margin-right: 3vh;
+  border-radius: 5px;
+  padding: 1vh;
+  width: 2vw;
+  height: 4vh;
+}
+
+#type {
+  font-size: 30px;
+  min-width: fit-content;
+}
+
+.contact p {
+  color: white;
+}
+
+/**
+* Media query Ipad
+*/
+
+@media screen and (max-width: 1000px), (width: 820px) and (height: 1180px) {
+  /**
+  * Header
+  */
+  .navigation {
+    height: 8vh;
+  }
+  #logo {
+    margin-left: 3vw;
+    margin-top: 1.5vh;
+  }
+
+  #logo img {
+    height: 5vh;
+  }
+
+  .navBarre {
+    margin-top: 1.3vh;
+  }
+
+  /**
+  * Main
+  */
+
+  .main_title {
+    width: 74%;
+  }
+
+  .main_title h3 {
+    font-size: 22px;
+  }
+
+  .main_title button {
+    padding: 1.5vh 2.5vw;
+    font-size: 20px;
+  }
+
+  /**
+  * Concept
+  */
+
+  #concept h1 {
+    left: -26vw;
+    top: 125vh;
+  }
+
+  .concept_title h2 {
+    font-size: 30px;
+  }
+
+  .service {
+    margin: 2vw;
+    width: 19vw;
+  }
+
+  /**
+  * Châteaux
+  */
+
+  #castles h1 {
+    font-size: 140px;
+    right: -26vw;
+    top: 190vh;
+  }
+
+  .castle_p1 {
+    width: 90%;
+    flex-wrap: wrap;
+    margin-left: 5vw;
+  }
+  .castle_p2 {
+    width: 90%;
+    flex-wrap: wrap;
+    margin-left: 4vw;
+  }
+
+  .castle_p1 img {
+    height: 20vh;
+    width: 38vw;
+    margin: 1.2vh 2.2vh;
+  }
+  .castle_p2 img {
+    height: 20vh;
+    width: 40vw;
+    margin: 2.5vw;
+  }
+
+  #img_large {
+    height: 22vh;
+    width: 76vw;
+    margin: 3vh 7vw;
+  }
+
+  .castle_title h2 {
+    margin: 2vh 3vw;
+    font-size: 30px;
+  }
+
+  /**
+  * Contact
+  */
+
+  #contacts h1 {
+    font-size: 160px;
+    left: -20vw;
+    top: 284vh;
+  }
+
+  .contact_title h2 {
+    font-size: 30px;
+  }
+
+  .type_contact {
+    margin-left: 15vw;
+    margin-bottom: 1.5vh;
+  }
+
+  .type_contact span {
+    padding: 1vh;
+    width: 2vw;
+    height: 2.3vh;
+  }
+
+  #type {
+    font-size: 27px;
+    min-width: fit-content;
+  }
+
+  .type_contact p {
+    font-size: 19px;
+  }
+}
+
+/**
+* Media Query Iphone
+*/
+
+@media only screen and (max-width: 700px),
+  (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+  /**
+* Header
+*/
+
+  #yellow_layer {
+    height: 0.8vh;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 21vh;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+  .navigation li {
+    height: 2vh;
+    padding-bottom: 0.5vh;
+  }
+
+  .navigation a {
+    font-size: 0.8rem;
+  }
+
+  .navigation #square {
+    font-size: 15px;
+    margin-top: 0.4vh;
+  }
+
+  .navBarre {
+    margin-top: 0;
+    margin-left: 2vh;
+  }
+
+  #logo img {
+    height: 5vh;
+  }
+
+  /**
+* Main
+*/
+
+  .background {
+    height: 60vh;
+  }
+
+  .main_title {
+    width: 90vw;
+    top: 46%;
+  }
+
+  .main_title h1 {
+    font-size: 80px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    /* margin: 0; */
+  }
+
+  .main_title button {
+    padding: 1.4vh 6vw;
+    border-radius: 6px;
+  }
+
+  /**
+* Concept
+*/
+
+  .concept_title h2 {
+    width: 55vw;
+  }
+
+  #concept h1 {
+    font-size: 140px;
+    left: -47vw;
+    top: 100vh;
+  }
+
+  .services {
+    flex-wrap: wrap;
+    margin-left: 8vw;
+  }
+
+  .service {
+    margin: 2vh;
+    height: 36vh;
+    width: 32vw;
+  }
+
+  /**
+* Châteaux
+*/
+
+  #castles {
+    margin-top: 5vh;
+  }
+
+  #castles h1 {
+    font-size: 120px;
+    right: -79vw;
+    top: 212vh;
+    width: 200vw;
+  }
+
+  .castle_title h2 {
+    width: 57vw;
+    text-align: center;
+  }
+
+  .castle_p1 {
+    flex-direction: column;
+    margin-left: 4vh;
+  }
+
+  .castle_p1 img {
+    height: 20vh;
+    width: 73vw;
+    margin: 2.2vh;
+  }
+
+  .castle_p2 {
+    flex-direction: column;
+    margin-left: 0vh;
+  }
+
+  .castle_p2 img {
+    height: 20vh;
+    width: 73vw;
+    margin: 2.2vh 14vw;
+  }
+
+  #img_large {
+    height: 20vh;
+    width: 111%;
+    margin: 2.2vh 0vw;
+  }
+
+  /**
+  * Contact
+  */
+
+  .contact_title {
+    margin-bottom: 3vh;
+  }
+  .contact_title h2 {
+    width: 50vw;
+    text-align: center;
+  }
+
+  #contacts h1 {
+    left: -39vw;
+    top: 400vh;
+  }
+
+  .type_contact span {
+    width: 6.5vw;
+    height: 3vh;
+  }
+  #square {
+    margin: 0 2vw;
+  }
+
+  .type_contact {
+    text-align: left;
+    margin-bottom: 0;
+    margin-left: 11vw;
+    width: 75vw;
+  }
+
+  #type {
+    font-size: 25px;
+    min-width: fit-content;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+  }
+}
